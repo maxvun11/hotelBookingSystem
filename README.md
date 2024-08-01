@@ -7,6 +7,7 @@
 2. Go to  this website to download VMware: https://www.vmware.com/info/workstation-player/evaluation
    - VMware is a vitual machine is a virtualization and cloud computing software provider. 
 User can us VMware to gain asses to MacOs and WindowsXp to Windows 11.
+3. Remember to downlaod the Jar files.
 
 # Prerequisite
 **Junit4 and Jar files must be installed and set up properly**
@@ -47,6 +48,11 @@ This workflow handles downloading, extracting, importing, and building your Java
 
 Junit is a widely used testing framework for Java programming. It helps developer swrite and run tests for their code, ensuring that individual units of functionality work as intended.
 
-Installed jar file
+##Installed jar file
 1.	Provide the jar file
 2.	Install the jar file in your own laptop or PC it will use after this.
+
+## Set Up The Enviroment
+1.	Eclipse contains the JUnit package to create a JUnit tes.
+
+2.	The library can be added during the creation of class using the wizard. If we want to add it later, **right-click** on project name in the packges explorer and select **Build Path -> Add Libraries**.
