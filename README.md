@@ -12,7 +12,7 @@ User can us VMware to gain asses to MacOs and WindowsXp to Windows 11.
 **Junit4 and Jar files must be installed and set up properly**
 
 # Set Up
-
+1. Import all the files into Eclipse.
 # Deployment
 How to deploy the JAVA program after download from GitHub
 1.	Download the archive file containing your project code.
