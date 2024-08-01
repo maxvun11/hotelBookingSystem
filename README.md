@@ -81,6 +81,7 @@ Unit testing is a software testing technique where individual components or func
 2.	To make the methd will run in test, there is must be add @Test befor ethe method.
 
 3.	Example code:
+```java
 //test the setRoomsWishToBook
     @Test
     @Parameters({"guest, 1, 1", "normal, 2, 2", "VIP, 3, 3"})
@@ -100,7 +101,7 @@ Unit testing is a software testing technique where individual components or func
     	String actualResult = u.getName();
     	assertEquals(expectedResult,actualResult);
     }
-
+```
 4.	To view the testing method is valid or invalid, we can click green icon for run. Then it weill shwo the result green color mean valid or successful, red color mean invalid or unsuccessful.
 ![image](https://github.com/user-attachments/assets/a527d434-524a-4ce8-9318-c2650606b907)
 
@@ -114,7 +115,7 @@ Unit testing is a software testing technique where individual components or func
 
 3.	The @Before annotation in JUnit is used to specify a method that should be executed before each test method in the test class. This method is often used to set up the test environment, initialize data, or configure necessary resources to ensure that each test starts from a known and consistent state.
 
-
+```java
 @Before
 	public void setUpTests() {
 		//this is to set up the availablerooms.txt file to 5,5,5 Before each test
@@ -246,3 +247,4 @@ Unit testing is a software testing technique where individual components or func
 	    	};
 	    }
 }
+```
