@@ -3,7 +3,7 @@
 # Install
 
 1. Go to this website to download Eclipse: https://www.eclipse.org/downloads/
-**Using Eclipse will be much easier to perfome testing compare to other compiler.**
+   - **Using Eclipse will be much easier to perfome testing compare to other compiler.**
 2. Go to  this website to download VMware: https://www.vmware.com/info/workstation-player/evaluation
 VMware is a vitual machine is a virtualization and cloud computing software provider. 
 User can us VMware to gain asses to MacOs and WindowsXp to Windows 11.
