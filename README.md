@@ -13,6 +13,10 @@ User can us VMware to gain asses to MacOs and WindowsXp to Windows 11.
 
 # Set Up
 1. Import all the files into Eclipse.
+![image](https://github.com/user-attachments/assets/b5752be5-eaea-4a4e-bfb6-750a1766d60c)
+2. Make sure that the JUnit libary version is on JUnit4.
+![image](https://github.com/user-attachments/assets/95b84bc7-fe58-4280-8ae0-3afe5df62493)
+
 # Deployment
 How to deploy the JAVA program after download from GitHub
 1.	Download the archive file containing your project code.
