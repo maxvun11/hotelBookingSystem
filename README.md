@@ -70,6 +70,7 @@ Junit is a widely used testing framework for Java programming. It helps develope
 8.	After that, we can see the jar that we selected was show in the library. Then click **Apply and Close** at right bottom.
 ![image](https://github.com/user-attachments/assets/e0915705-e8be-4cfa-beca-a82099c6eb39)
 9.	You also may check the library and jar file that add at left hand side.
+![image](https://github.com/user-attachments/assets/508194c3-1a79-4a66-be82-f2cba8b68379)
 10.	Once we set up the testing environment , we are able to conduct unit testing, integration testing and test suite
 
 ## Unit Test
@@ -101,8 +102,9 @@ Unit testing is a software testing technique where individual components or func
     }
 
 4.	To view the testing method is valid or invalid, we can click green icon for run. Then it weill shwo the result green color mean valid or successful, red color mean invalid or unsuccessful.
-![image](https://github.com/user-attachments/assets/508194c3-1a79-4a66-be82-f2cba8b68379)
 ![image](https://github.com/user-attachments/assets/a527d434-524a-4ce8-9318-c2650606b907)
+
+![image](https://github.com/user-attachments/assets/4b46a6af-b0c7-4946-82e0-0427e81fe3fd)
 
 ## Integration Test
 1.	The @RunWith(JUnitParamsRunner.class) annotation is used in JUnit testing to specify a custom runner class that will execute the test class. In this case, the JUnitParamsRunner is a runner provided by the JUnitParams library, which is used to support parameterized tests in JUnit.
