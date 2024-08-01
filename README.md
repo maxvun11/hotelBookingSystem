@@ -130,6 +130,7 @@ Unit testing is a software testing technique where individual components or func
 
 4.	The @After annotation in JUnit is used to specify a method that should be executed after each test method in the test class. This method is often used for cleanup activities or to reset the test environment to a consistent state, ensuring that tests do not interfere with each other.
 
+
 @After
 	public void afterTests() {
 		try {
