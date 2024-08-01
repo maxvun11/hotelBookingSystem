@@ -1,5 +1,11 @@
 # hotelBookingSystem
 
+# Set Up
+
+# Prerequisite
+
+# Install
+
 # Deployment
 How to deploy the JAVA program after download from GitHub
 1.	Download the archive file containing your project code.
@@ -26,3 +32,10 @@ Notes:
 •	Workspace Directory: /tmp/workspace is used here as a temporary workspace directory. You can customize this path based on your requirements.
 This workflow handles downloading, extracting, importing, and building your Java project using Eclipse in a GitHub Actions pipeline.
 
+# Test Description
+
+Junit is a widely used testing framework for Java programming. It helps developer swrite and run tests for their code, ensuring that individual units of functionality work as intended.
+
+Installed jar file
+1.	Provide the jar file
+2.	Install the jar file in your own laptop or PC it will use after this.
