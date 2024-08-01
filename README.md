@@ -37,11 +37,13 @@ Explanation:
 	o	Import the Project: Imports the extracted project into the Eclipse workspace. Adjust the import path as needed.
 	o	Build the Project: Uses Eclipse command-line tools to build the project.
 	5.	List files:
-	o	Lists files in the bin directory to verify that the JAR file was created successfully.
-Notes:
-	-Replace URL: Ensure you replace https://example.com/path/to/your/archive.zip with the actual URL of your project archive.
-	-Update Paths: Adjust /path/to/extracted/project to match the location where you want to extract the project and where the JAR file should be located after the build.
-	-Workspace Directory: /tmp/workspace is used here as a temporary workspace directory. You can customize this path based on your requirements.
+	o	Lists files in the bin directory to verify that the JAR file was created successfully. 
+
+**Notes:**
+-Replace URL: Ensure you replace https://example.com/path/to/your/archive.zip with the actual URL of your project archive.
+-Update Paths: Adjust /path/to/extracted/project to match the location where you want to extract the project and where the JAR file should be located after the build.
+-Workspace Directory: /tmp/workspace is used here as a temporary workspace directory. You can customize this path based on your requirements.
+
 This workflow handles downloading, extracting, importing, and building your Java project using Eclipse in a GitHub Actions pipeline.
 
 # Test Description
