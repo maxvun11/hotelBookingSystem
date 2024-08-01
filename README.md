@@ -1,5 +1,6 @@
 # hotelBookingSystem
 
+# Deployment
 How to deploy the JAVA program after download from GitHub
 1.	Download the archive file containing your project code.
 2.	Extract the archive to a specified directory.
