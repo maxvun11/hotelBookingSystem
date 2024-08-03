@@ -11,7 +11,7 @@ https://www.eclipse.org/downloads/
 https://www.vmware.com/info/workstation-player/evaluation
    - VMware is a vitual machine is a virtualization and cloud computing software provider. 
 User can us VMware to gain asses to Windows10 to Windows 11.
-   - The link below contains the guideline to install and use VMware.
+   - The link below contains the guideline to install and use VMware:
 https://www.youtube.com/watch?v=cygsGM5sNJo
 
 # Prerequisite
