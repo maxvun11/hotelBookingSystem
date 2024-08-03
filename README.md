@@ -19,11 +19,13 @@ https://www.youtube.com/watch?v=cygsGM5sNJo
 For the following process, please refer to **Set Up The Enviroment**.
 
 # Set Up
-1. Import all the files into Eclipse.
-
-
-2. Make sure that the JUnit libary version is on JUnit4.
-![image](https://github.com/user-attachments/assets/95b84bc7-fe58-4280-8ae0-3afe5df62493)
+1. Download all the files provided into your desktop.
+2. Open your Eclipse.
+3. On the top left hand conner you can see **File**, click on it.
+4. Next, click on **import**.
+5. Click **Next** and choose **Browse**. (This will lead you into your directory and select the folder you had downloaded just now)
+6. Click **Finish**.
+7. Now you can see the project file on the right hand side in Eclipse.
 
 # Deployment
 How to deploy the JAVA program after download from GitHub
