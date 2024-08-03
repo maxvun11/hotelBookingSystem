@@ -5,19 +5,23 @@
 1. Go to this website to download Eclipse:
 https://www.eclipse.org/downloads/
    - **Using Eclipse will be much easier to perfome testing compare to other compiler.**
+The link below contains the guidiance to complete the downloading process.   
+https://www.eclipse.org/downloads/packages/installer
+
 2. Go to  this website to download VMware:
 https://www.vmware.com/info/workstation-player/evaluation
    - VMware is a vitual machine is a virtualization and cloud computing software provider. 
-User can us VMware to gain asses to MacOs and WindowsXp to Windows 11.
-3. Remember to downlaod the Jar files.
+User can us VMware to gain asses to Windows10 to Windows 11.
+The link below 
+https://www.youtube.com/watch?v=cygsGM5sNJo
 
 # Prerequisite
 **Junit4 and Jar files must be installed and set up properly**
+For the following process, please refer to **Set Up The Enviroment**.
 
 # Set Up
 1. Import all the files into Eclipse.
 
-![image](https://github.com/user-attachments/assets/b5752be5-eaea-4a4e-bfb6-750a1766d60c)
 
 2. Make sure that the JUnit libary version is on JUnit4.
 ![image](https://github.com/user-attachments/assets/95b84bc7-fe58-4280-8ae0-3afe5df62493)
@@ -62,21 +66,21 @@ Junit is a widely used testing framework for Java programming. It helps develope
 1.	Eclipse contains the JUnit package to create a JUnit tes.
 
 2.	The library can be added during the creation of class using the wizard. If we want to add it later, **right-click** on project name in the packges explorer and select **Build Path -> Add Libraries**.
-![image](https://github.com/user-attachments/assets/5da46566-24ef-4ee4-bce4-274429f08a5b)
-3.	Select the JUnit form the list. Click **[Next]**
-![image](https://github.com/user-attachments/assets/0288ba8d-2d59-4246-bb49-c72719cd6cc2)
+
+3.	Select the JUnit from the list. Then, click **[Next]**
+
 4. Select JUnit 4 and then **[Finish]**, You should see the JUnit library has been added into the project in the package explorer.
-![image](https://github.com/user-attachments/assets/ff830a7a-9848-42e1-8870-c158917313ec)
-5. The jar file can be added during the creation of class using the wizard. If we want to add it later, right-click on project name in the package explorer and select confugure build path.
-![image](https://github.com/user-attachments/assets/8d641f0a-0085-469a-a1a3-fb98a15bf484)
+
+5. The **jar file** can be added during the creation of class using the wizard. If we want to add it later, right-click on project name in the package explorer and select confugure build path.
+
 6.	Select Add External JARs at **right hand side.**
-![image](https://github.com/user-attachments/assets/f9a94ef2-16ec-4a2b-a6b4-f4bbe483eba3)
-7.	select **All** the jar file then click **open**.
-![image](https://github.com/user-attachments/assets/a10ba630-5674-4daa-9a32-6fcbb2efc103)
+
+7.	Select **All** the jar file on your desktop file, then click **open**.
+
 8.	After that, we can see the jar that we selected was show in the library. Then click **Apply and Close** at right bottom.
-![image](https://github.com/user-attachments/assets/e0915705-e8be-4cfa-beca-a82099c6eb39)
+
 9.	You also may check the library and jar file that add at left hand side.
-![image](https://github.com/user-attachments/assets/508194c3-1a79-4a66-be82-f2cba8b68379)
+
 10.	Once we set up the testing environment , we are able to conduct unit testing, integration testing and test suite
 
 ## Unit Test
@@ -254,3 +258,6 @@ Unit testing is a software testing technique where individual components or func
 	    }
 }
 ```
+##Additional Notes
+There are others testing classes and you can explore it! Good Luck!!!
+
