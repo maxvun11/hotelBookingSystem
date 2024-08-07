@@ -259,11 +259,11 @@ Unit testing is a software testing technique where individual components or func
 	    }
 }
 ```
-##Additional Notes
+## Additional Notes
 There are others testing classes and you can explore it! Good Luck!!!
 
-#Build Configuration with Gradle
-Prerequisites
+# Build Configuration with Gradle
+## Prerequisites
 1.	Install Gradle
 -	Ensure Gradle is installed on your system. You can download it from https://docs.gradle.org/current/userguide/installation.html#ex-installing-manually
 
