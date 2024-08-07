@@ -19,13 +19,13 @@ https://www.youtube.com/watch?v=cygsGM5sNJo
 For the following process, please refer to **Set Up The Enviroment**.
 
 # Set Up
-1. Download all the files provided into your desktop.
+1. Download all the files provided onto your desktop.
 2. Open your Eclipse.
-3. On the top left hand conner you can see **File**, click on it.
+3. On the top left-hand corner, you can see **File**; click on it.
 4. Next, click on **import**.
-5. Click **Next** and choose **Browse**. (This will lead you into your directory and select the folder you had downloaded just now)
+5. Click **Next** and choose **Browse**. (This will lead you into your directory and select the folder you had downloaded just now.)
 6. Click **Finish**.
-7. Now you can see the project file on the right hand side in Eclipse.
+7. Now you can see the project file on the right-hand side in Eclipse.
 
 # Deployment
 How to deploy the JAVA program after download from GitHub
@@ -57,13 +57,13 @@ This workflow handles downloading, extracting, importing, and building your Java
 
 # Test Description
 
-Junit is a widely used testing framework for Java programming. It helps developer swrite and run tests for their code, ensuring that individual units of functionality work as intended.
+Junit is a widely used testing framework for Java programming. It helps developers swrite and run tests for their code, ensuring that individual units of functionality work as intended.
 
 ##Installed jar file
 1.	Provide the jar file
-2.	Install the jar file in your own laptop or PC it will use after this.
+2.	Install the jar file on your own laptop or PC it will be use after this.
 
-## Set Up The Enviroment
+## Set Up The Environment
 1.	Eclipse contains the JUnit package to create a JUnit tes.
 
 2.	The library can be added during the creation of class using the wizard. If we want to add it later, **right-click** on project name in the packges explorer and select **Build Path -> Add Libraries**.
@@ -78,9 +78,9 @@ Junit is a widely used testing framework for Java programming. It helps develope
 
 7.	Select **All** the jar file on your desktop file, then click **open**.
 
-8.	After that, we can see the jar that we selected was show in the library. Then click **Apply and Close** at right bottom.
+8.	After that, we can see the jar that we selected was shown in the library. Then click **Apply and Close** at the right bottom.
 
-9.	You also may check the library and jar file that add at left hand side.
+9.	You also may check the library and jar file that are added on the left-hand side.
 
 10.	Once we set up the testing environment , we are able to conduct unit testing, integration testing and test suite
 
@@ -89,7 +89,7 @@ Unit testing is a software testing technique where individual components or func
 
 1.	The @RunWith(JUnitParamsRunner.class) annotation is used in JUnit testing to specify a custom runner class that will execute the test class. In this case, the JUnitParamsRunner is a runner provided by the JUnitParams library, which is used to support parameterized tests in JUnit.
 
-2.	To make the methd will run in test, there is must be add @Test befor ethe method.
+2.	To make the method will run in test, there must be an @Test before the method.
 
 3.	Example code:
 ```java
@@ -113,7 +113,7 @@ Unit testing is a software testing technique where individual components or func
     	assertEquals(expectedResult,actualResult);
     }
 ```
-4.	To view the testing method is valid or invalid, we can click green icon for run. Then it weill shwo the result green color mean valid or successful, red color mean invalid or unsuccessful.
+4.	To view if the testing method is valid or invalid, we can click the green icon for run. Then it will show the result green color means valid or successful, red color means invalid or unsuccessful.
 ![image](https://github.com/user-attachments/assets/a527d434-524a-4ce8-9318-c2650606b907)
 
 ![image](https://github.com/user-attachments/assets/4b46a6af-b0c7-4946-82e0-0427e81fe3fd)
@@ -121,7 +121,7 @@ Unit testing is a software testing technique where individual components or func
 ## Integration Test
 1.	The @RunWith(JUnitParamsRunner.class) annotation is used in JUnit testing to specify a custom runner class that will execute the test class. In this case, the JUnitParamsRunner is a runner provided by the JUnitParams library, which is used to support parameterized tests in JUnit.
 
-2.	For run the integration test , we will use the @Before and @After before annotation the test method.
+2.	For run the integration test , we will use the @Before and @After annotations in the test method.
 
 
 3.	The @Before annotation in JUnit is used to specify a method that should be executed before each test method in the test class. This method is often used to set up the test environment, initialize data, or configure necessary resources to ensure that each test starts from a known and consistent state.
@@ -174,9 +174,9 @@ Unit testing is a software testing technique where individual components or func
 	User guest6 = new User("guest6", "guest");
 	
 
-	//this test will mock the ConsoleUtilities class in order to fix the answer to "y" when user is prompted to cancel
+	//this test will mock the ConsoleUtilities class in order to fix the answer to "y" when user is prompted to cancel.
 	//booking
-	//As usual, we will assume every user book the maximum allowed of rooms to truly test the reliability 
+	//Asusual, we will assume every user book the maximum allowed number of rooms to truly test the reliability. 
 	//potential of the hotel room booking system
 	@Test//no1
 	@Parameters(method = "getParamsForTestBookingAndCancel")
@@ -198,11 +198,11 @@ Unit testing is a software testing technique where individual components or func
 	 	for(User user : usersCancelBooking)
 	 	{
 	 	/*
-	 	* cancelOutcome will check if the user were placed in waiting list, 
-	 	* if yes, it will remove the user from the WL and return a true boolean value
-	 	* which will then be tested whether the user has been removed from the WL ArrayList
-	 	* if no, it will return a false boolean value, and will proceed to cancel the successfully placed booking
-	 	* which will then be tested whether their previous successfully placed booking pending status is set to false
+	 	* cancelOutcome will check if the user was placed on the waiting list.
+	 	* if yes, it will remove the user from the WL and return a true boolean value.
+	 	* which will then be tested to see whether the user has been removed from the WL ArrayList.
+	 	* if not, it will return a false boolean value, and will proceed to cancel the successfully placed booking.
+	 	* which will then be tested whether their previous successfully placed booking pending status is set to false.
 	 	*/
 	 		boolean cancelBookingFromWL = wl.removeWaiting(user);
 	 		if(!cancelBookingFromWL)
@@ -260,7 +260,7 @@ Unit testing is a software testing technique where individual components or func
 }
 ```
 ## Additional Notes
-There are others testing classes and you can explore it! Good Luck!!!
+There are other testing classes and you can explore them! Good Luck!!!
 
 # Build Configuration with Gradle
 ## Prerequisites
