@@ -262,3 +262,21 @@ Unit testing is a software testing technique where individual components or func
 ##Additional Notes
 There are others testing classes and you can explore it! Good Luck!!!
 
+#Build Configuration with Gradle
+Prerequisites
+1.	Install Gradle
+-	Ensure Gradle is installed on your system. You can download it from https://docs.gradle.org/current/userguide/installation.html#ex-installing-manually
+
+2.	Install java
+-	Ensure JDK is installed on your system, version acceptable are JDK 17 and JDK 20. Also if there is latest version of JDK is acceptable.
+-	Download link refer https://www.oracle.com/my/java/technologies/downloads/#jdk22-windows
+
+Steps:
+1.	Navigate to the project directory
+-	Open command prompt
+-	Use cd to navigate ‘SoftwareTestingAssignment’ directory
+-	cd path\to\SoftwareTestingAssignment
+
+2.	Create the ‘build.gradle’ file
+-	Use text editor like notepad to create the ‘build.gradle’ file
+-	Write the below code in the ‘build.gradle’ file
