@@ -285,7 +285,7 @@ Steps:
 3.	Directory structure
 -	Ensure the ‘SoftwareTestingAssignment’’ directory has the following structure
 -	![image](https://github.com/user-attachments/assets/53358749-3642-4456-8b43-90acb6f2dd0e)
--	-	Command for use check the project directory (dir build.gradle OR dir)
+-	Command for use check the project directory (dir build.gradle OR dir)
 4.	Run Gradle command
 -	gradle build
 
