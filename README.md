@@ -64,7 +64,7 @@ Junit is a widely used testing framework for Java programming. It helps develope
 2.	Install the jar file on your own laptop or PC it will be use after this.
 
 ## Set Up The Environment
-1.	Eclipse contains the JUnit package to create a JUnit tes.
+1.	Eclipse contains the JUnit package to create a JUnit test.
 
 2.	The library can be added during the creation of class using the wizard. If we want to add it later, **right-click** on project name in the packges explorer and select **Build Path -> Add Libraries**.
 
