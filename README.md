@@ -290,10 +290,10 @@ git conifg --global user.email "your.email@example.com"
 ```
 5. Create new repository on GitHub
 6. Initialize your local repository
-``` cd path/to/your/project
 ```
-
-initialize git
+cd path/to/your/project
+```
+- initialize git
 ```
 git init
 ```
@@ -305,11 +305,15 @@ git commit -m "Initial commit"
 ```
 
 8. Add remote Reposiory, go to your GitHub repository page, and find the URL under the "Code button" Copy the URL
-```git remote add origin https://githum.com/username/repository.git```
+```
+git remote add origin https://githum.com/username/repository.git
+```
 replace "https://github.com/username/repository.git" with your copies URL
 
-9. Push to GitHub
-   ```git push -u origin master```
+10. Push to GitHub
+   ```
+   git push -u origin master
+   ```
    if you're using a different branch(main), replace 'master' with 'main'
 
 
