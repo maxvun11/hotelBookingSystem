@@ -27,6 +27,9 @@ For the following process, please refer to **Set Up The Enviroment**.
 6. Click **Finish**.
 7. Now you can see the project file on the right-hand side in Eclipse.
 
+**Reminder**
+1. If your libary dependency is below JAVA-SE18, you have to change to Java System Libary (JAVA SE-20).
+
 # Deployment
 How to deploy the JAVA program after download from GitHub
 1.	Download the archive file containing your project code.
