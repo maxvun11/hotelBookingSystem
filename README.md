@@ -267,7 +267,7 @@ Steps:
 4.	Run Gradle command
 -	gradle init
 5.	Compile code
--	gradle build
+-	gradle build hi 
 6.       Run the test
 -	gradle test
 
