@@ -273,10 +273,12 @@ Steps:
 
 # Deployment
 How to deploy the JAVA program 
+
 Step 1: Create a New Repository on GitHub
 Go to your GitHub account and click on the "New Repository" button.
 Name your repository, add a description, and choose whether it's public or private.
 Click "Create repository."
+
 Step 2: Upload Files and Folders
 Once your repository is created, click on "Add file" > "Upload files".
 Before upload,make sure you already compress all folder into ZIP file.
