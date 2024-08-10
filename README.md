@@ -268,7 +268,7 @@ Steps:
 -	gradle init
 5.	Compile code
 -	gradle build
-6.      Run test
+6.      Run the test
 -	gradle test
 
 # Deployment
