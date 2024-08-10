@@ -306,7 +306,7 @@ git commit -m "Initial commit"
 
 8. Add remote Reposiory, go to your GitHub repository page, and find the URL under the "Code button" Copy the URL
 ```
-git remote add origin https://githum.com/username/repository.git
+git remote add origin https://github.com/username/repository.git
 ```
 replace "https://github.com/username/repository.git" with your copies URL
 
