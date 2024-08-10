@@ -30,33 +30,8 @@ For the following process, please refer to **Set Up The Enviroment**.
 **Reminder**
 1. If your libary dependency is below JAVA-SE18, you have to change to Java System Libary (JAVA SE-20).
 
-# Deployment
-How to deploy the JAVA program after download from GitHub
-1.	Download the archive file containing your project code.
-2.	Extract the archive to a specified directory.
-3.	Import the extracted project into the Eclipse workspace.
-4.	Build the project using Eclipse.
-Here’s how you can create a GitHub Actions workflow to accomplish this:
-![image](https://github.com/user-attachments/assets/5d274ff3-1c37-4d50-85e4-60462b532b37)
-Explanation:
-	1.	Download Project Archive:
-	o	Downloads the archive file from a specified URL. Adjust the URL to where your archive is located.
-	2.	Extract Project Archive:
-	o	Extracts the contents of the archive to a directory on the GitHub Actions runner. Adjust the extraction path as needed.
-	3.	Install Eclipse:
-	o	Downloads and installs Eclipse, and creates a symbolic link to the eclipse executable.
-	4.	Build with Eclipse:
-	o	Import the Project: Imports the extracted project into the Eclipse workspace. Adjust the import path as needed.
-	o	Build the Project: Uses Eclipse command-line tools to build the project.
-	5.	List files:
-	o	Lists files in the bin directory to verify that the JAR file was created successfully. 
 
-**Notes:**
-- Replace URL: Ensure you replace https://example.com/path/to/your/archive.zip with the actual URL of your project archive.
-- Update Paths: Adjust /path/to/extracted/project to match the location where you want to extract the project and where the JAR file should be located after the build.
-- Workspace Directory: /tmp/workspace is used here as a temporary workspace directory. You can customize this path based on your requirements.
 
-This workflow handles downloading, extracting, importing, and building your Java project using Eclipse in a GitHub Actions pipeline.
 
 # Test Description
 
@@ -290,8 +265,34 @@ Steps:
 -	![image](https://github.com/user-attachments/assets/53358749-3642-4456-8b43-90acb6f2dd0e)
 -	Command for use check the project directory (dir build.gradle OR dir)
 4.	Run Gradle command
+-	gradle init
+5.	Compile code
 -	gradle build
-
-5.	Run the test
+6.      Run test
 -	gradle test
+
+# Deployment
+How to deploy the JAVA program 
+Step 1: Create a New Repository on GitHub
+Go to your GitHub account and click on the "New Repository" button.
+Name your repository, add a description, and choose whether it's public or private.
+Click "Create repository."
+Step 2: Upload Files and Folders
+Once your repository is created, click on "Add file" > "Upload files".
+
+In the file upload interface:
+
+Drag and drop your files and folders into the interface.
+Or, click "choose your files" to browse and select them manually.
+Add a commit message at the bottom of the page to describe what you’re uploading.
+
+Click "Commit changes."
+After uploading files to GitHub, you can view them directly in your repository using the GitHub web interface. Here's how you can do that:
+
+1. Navigate to Your Repository
+Go to GitHub and log in to your account if you aren't already.
+On your dashboard, locate your repository in the "Repositories" section or use the search bar to find it.
+Click on the repository's name to open it.
+
+
 
