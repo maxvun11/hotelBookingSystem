@@ -268,6 +268,12 @@ Steps:
   
 4.	Run Gradle command
 -	gradle init
+-	（a)Select Application as type of build and
+-	 (b)Select the implementation language as Java.
+-	 (c)Then, enter the appropriate Java version (max 21)
+-	 (d)Select single application project as application structure.
+-	 (e)Select Kotlin as build script DSL
+-	 (f)select J Unit 4 for the test framework.
   
 5.	Compile code
 -	gradle build
