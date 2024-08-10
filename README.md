@@ -260,14 +260,18 @@ Steps:
 -	Write the below code in the ‘build.gradle’ file
 -	![image](https://github.com/user-attachments/assets/bb8a8f23-19e5-44b4-8451-78df6ffc44cd)
 -	After done enter the code, save the file in the ‘SoftwareTestingAssignment’ directory
+  
 3.	Directory structure
 -	Ensure the ‘SoftwareTestingAssignment’’ directory has the following structure
 -	![image](https://github.com/user-attachments/assets/53358749-3642-4456-8b43-90acb6f2dd0e)
 -	Command for use check the project directory (dir build.gradle OR dir)
+  
 4.	Run Gradle command
 -	gradle init
+  
 5.	Compile code
 -	gradle build
+  
 6.      Run the test
 -	gradle test
 
