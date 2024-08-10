@@ -279,6 +279,7 @@ Name your repository, add a description, and choose whether it's public or priva
 Click "Create repository."
 Step 2: Upload Files and Folders
 Once your repository is created, click on "Add file" > "Upload files".
+Before upload,make sure you already compress all folder into ZIP file.
 
 In the file upload interface:
 
