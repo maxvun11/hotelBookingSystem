@@ -276,30 +276,43 @@ Steps:
 -	gradle test
 
 # Deployment
-How to deploy the JAVA program 
+How to deploy the JAVA program on the GitHub by using Git
 
-Step 1: Create a New Repository on GitHub
-Go to your GitHub account and click on the "New Repository" button.
-Name your repository, add a description, and choose whether it's public or private.
-Click "Create repository."
+Steps
+1. Downlaod Git from official website
+   https://git-scm.com/download/win .
+2. Set up the Git  which you can find git bash in your Start menu after installation.
+3. Set Up your name and email address, which will be used for commit messages .
+4. Run these commands in Git Bash:
+```
+git conifg --global user.name "Your Name"
+git conifg --global user.email "your.email@example.com"
+```
+5. Create new repository on GitHub
+6. Initialize your local repository
+``` cd path/to/your/project
+```
 
-Step 2: Upload Files and Folders
-Once your repository is created, click on "Add file" > "Upload files".
-Before upload,make sure you already compress all folder into ZIP file.
+initialize git
+```
+git init
+```
 
-In the file upload interface:
+7. Add and commit the files
+```
+git add .
+git commit -m "Initial commit"
+```
 
-Drag and drop your files and folders into the interface.
-Or, click "choose your files" to browse and select them manually.
-Add a commit message at the bottom of the page to describe what you’re uploading.
+8. Add remote Reposiory, go to your GitHub repository page, and find the URL under the "Code button" Copy the URL
+```git remote add origin https://githum.com/username/repository.git```
+replace "https://github.com/username/repository.git" with your copies URL
 
-Click "Commit changes."
-After uploading files to GitHub, you can view them directly in your repository using the GitHub web interface. Here's how you can do that:
+9. Push to GitHub
+   ```git push -u origin master```
+   if you're using a different branch(main), replace 'master' with 'main'
 
-1. Navigate to Your Repository
-Go to GitHub and log in to your account if you aren't already.
-On your dashboard, locate your repository in the "Repositories" section or use the search bar to find it.
-Click on the repository's name to open it.
+
 
 
 
