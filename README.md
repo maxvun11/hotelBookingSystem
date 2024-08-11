@@ -291,8 +291,8 @@ Steps
 3. Set Up your name and email address, which will be used for commit messages .
 4. Run these commands in Git Bash:
 ```
-git conifg --global user.name "Your Name"
-git conifg --global user.email "your.email@example.com"
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 ```
 5. Create new repository on GitHub
 6. Initialize your local repository
