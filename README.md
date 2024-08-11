@@ -1,6 +1,6 @@
 # HotelBookingSystem
 
-# Install
+# Installs
 
 1. Go to this website to download Eclipse:
 https://www.eclipse.org/downloads/
