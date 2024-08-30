@@ -212,7 +212,7 @@ public class UserTest {
     }
     
     //test the set rooms wish to book invalid
-    @Test(expected=(IllegalArgumentException.class))
+    @Test(expected= IllegalArgumentException.class)
     @Parameters({"VIP, -1", "VIP, 0", "VIP, 5", "VIP, 6", "VIP, 4", "normal, -1", "normal, 0", "normal, 3", "guest, -1", "guest, 0", "guest, 2"})
     public void setRoomsWishToBookWithInvalid(String member_type, int count)
     {

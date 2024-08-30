@@ -33,7 +33,7 @@ public class User
 	}
 	
 	public void setName(String name) {
-	    if (name == null || name.isEmpty() || name.isBlank()) {
+	    if (name == null || name.isEmpty() || name.trim().isEmpty()) {
 	        throw new IllegalArgumentException("Invalid name format");
 	    }
 	    this.name = name;

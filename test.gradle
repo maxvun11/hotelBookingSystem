@@ -1,0 +1,44 @@
+// Configure the test task
+// tasks.withType(Test) {
+//     testLogging {
+//         // Configure which events to log during test execution
+//         events 'passed', 'skipped', 'failed'
+//     }
+//     finalizedBy jacocoTestReport // Ensure JaCoCo report is generated after tests
+// }
+
+// // Define the JaCoCo test report task
+// task jacocoTestReport(type: JacocoReport) {
+//     dependsOn test // Ensure the test task runs before generating the report
+
+//     reports {
+//         xml.required = true // Generate XML report
+//         html.required = true // Generate HTML report
+//     }
+
+//     // Specify the source sets and class files for the report
+//     sourceSets sourceSets.main
+//     classDirectories.setFrom(files(sourceSets.main.output.classesDirs))
+//     executionData.setFrom(files("${buildDir}/jacoco/test.exec"))
+// }
+
+test {
+    // Specify the directory containing test classes
+    testClassesDirs = sourceSets.test.output.classesDirs
+
+    // Optionally configure test options
+    testLogging {
+        // Configure which events to log during test execution
+        events 'passed', 'skipped', 'failed'
+    }
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        html.required = true
+    }
+}
+
