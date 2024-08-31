@@ -4,6 +4,10 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.1.1/samples
  */
+ 
+plugins {
+  id "org.sonarqube" version "3.0"
+}
 
 apply plugin: 'java'
 apply plugin:'jacoco'
@@ -47,7 +51,7 @@ sourceSets {
             srcDir 'SoftwareTestingAssignment/src/main/java'
         }
         resources {
-            srcDir 'SoftwareTestingAssignment/src/main/resources'
+            srcDir 'SoftwareTestingAssignment/src/main/java/resources'
         }
     }
     test {
@@ -55,7 +59,7 @@ sourceSets {
             srcDir 'SoftwareTestingAssignment/src/test/java'
         }
         resources {
-            srcDir 'SoftwareTestingAssignment/src/test/resources'
+            srcDir 'SoftwareTestingAssignment/src/test/java/resources'
         }
     }
 }
@@ -68,4 +72,3 @@ jar {
     archiveBaseName = 'hotelBookingSystem'
     destinationDirectory = file('build/libs')
 }
-
