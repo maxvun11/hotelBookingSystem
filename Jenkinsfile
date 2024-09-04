@@ -22,10 +22,7 @@ pipeline {
         stage('Deploy') {
             steps {                
                         bat 'docker build -t java-app .'
-                        bat '''
-                            docker run -it --name java-app-container java-app
-                        '''
-                        
+                        powershell 'docker run -it --name java-app-container java-app'    
                  }           
         }
     
