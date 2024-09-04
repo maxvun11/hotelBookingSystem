@@ -10,23 +10,30 @@ pipeline {
         stage('Build') {
             steps {
 
-                        powershell 'gradle clean build'
-                        powershell 'gradle copyResources'
+                        powershell '''
+                            gradle clean build
+                            gradle copyResources
+                        '''
                 
             }
         }
         stage('Test') {
             steps {
                 
-                        powershell 'gradle test'
-                        powershell 'gradle sonarqube'
+                        powershell '''
+                            gradle test
+                            gradle sonarqube
+                        '''
+                        
                   
             }
         }
         stage('Deploy') {
             steps {                
-                        powershell 'docker build -t java-app .'
-                        powershell 'docker run -it --name java-app-container java-app'
+                        powershell '''
+                            docker build -t java-app .
+                            docker run -it --name java-app-container java-app
+                        '''
                  }           
         }
     
@@ -36,8 +43,10 @@ post {
         always {
             // Cleanup or other post-build steps
             echo 'Cleaning up...'
-            powershell 'docker rm -f java-app-container || echo "No container to remove"'
-            powershell 'docker rmi -f java-app || echo "No image to remove"'
+            powershell '''
+                docker rm -f java-app-container || echo "No container to remove"
+                docker rmi -f java-app || echo "No image to remove"
+            '''
         }
         success {
             echo 'Build succeeded!!'
