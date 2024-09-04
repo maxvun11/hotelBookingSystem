@@ -43,7 +43,7 @@ post {
         always {
             // Cleanup or other post-build steps
             echo 'Cleaning up...'
-            powershell '''
+            bat '''
                 docker rm -f java-app-container || echo "No container to remove"
                 docker rmi -f java-app || echo "No image to remove"
             '''
