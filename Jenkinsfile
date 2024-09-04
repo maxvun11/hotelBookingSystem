@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
 
-                        powershell '''
+                        bat '''
                             gradle clean build
                             gradle copyResources
                         '''
@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 
-                        powershell '''
+                        bat '''
                             gradle test
                             gradle sonarqube
                         '''
@@ -30,7 +30,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {                
-                        powershell '''
+                        bat '''
                             docker build -t java-app .
                             docker run -it --name java-app-container java-app
                         '''
