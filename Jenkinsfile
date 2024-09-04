@@ -9,31 +9,20 @@ pipeline {
         }
         stage('Build') {
             steps {
-
-                        bat '''
-                            gradle clean build
-                            gradle copyResources
-                        '''
-                
+                        bat 'gradle clean build'
+                        bat 'gradle copyResources'
             }
         }
         stage('Test') {
             steps {
-                
-                        bat '''
-                            gradle test
-                            gradle sonarqube
-                        '''
-                        
-                  
+                        bat 'gradle test'
+                        bat 'gradle sonarqube'
             }
         }
         stage('Deploy') {
             steps {                
-                        bat '''
-                            docker build -t java-app .
-                            docker run -it --name java-app-container java-app
-                        '''
+                        bat 'docker build -t java-app .'
+                        bat 'docker run -it --name java-app-container java-app'
                  }           
         }
     
@@ -43,10 +32,8 @@ post {
         always {
             // Cleanup or other post-build steps
             echo 'Cleaning up...'
-            bat '''
-                docker rm -f java-app-container || echo "No container to remove"
-                docker rmi -f java-app || echo "No image to remove"
-            '''
+            bat 'docker rm -f java-app-container || echo "No container to remove"'
+            bat 'docker rmi -f java-app || echo "No image to remove"' 
         }
         success {
             echo 'Build succeeded!!'
