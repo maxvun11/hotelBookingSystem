@@ -10,6 +10,9 @@ COPY build/libs/hotelBookingSystem-V1.jar /app/hotelBookingSystem-V1.jar
 # 4. Copy Text Files to the Container
 COPY availablerooms.txt /app/availablerooms.txt
 COPY userinfo.txt /app/userinfo.txt
+COPY getNameOfUserWithValid.txt /app/getNameOfUserWithValid.txt
+COPY setRoomsWishToBookWithValid.txt /app/setRoomsWishToBookWithValid.txt
+COPY waitinglist.txt /app/waitinglist.txt
 
 # 5. Run the Compiled Java Program
 CMD ["java", "-jar", "hotelBookingSystem-V1.jar"]
