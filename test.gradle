@@ -26,7 +26,7 @@ sonarqube {
     properties {
         property 'sonar.projectKey', 'HotelBookingSystem'
         property 'sonar.host.url', 'http://localhost:9000'
-        property 'sonar.login', 'e45d6b6c62ec58f85aee2bbeec10f5f64aa347d0'
+        property 'sonar.login', '9d23206e551b3d493f7674fe50b1c9a97a34db1e'
         property 'sonar.jacoco.reportPaths', 'build/reports/jacoco/test/xml'
     }
 }
