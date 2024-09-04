@@ -50,16 +50,10 @@ sourceSets {
         java {
             srcDir 'SoftwareTestingAssignment/src/main/java'
         }
-        resources {
-            srcDir 'SoftwareTestingAssignment/src/main/java/resources'
-        }
     }
     test {
         java {
             srcDir 'SoftwareTestingAssignment/src/test/java'
-        }
-        resources {
-            srcDir 'SoftwareTestingAssignment/src/test/java/resources'
         }
     }
 }
@@ -71,4 +65,11 @@ jar {
     from sourceSets.main.output
     archiveBaseName = 'hotelBookingSystem'
     destinationDirectory = file('build/libs')
+}
+
+// Task to copy resource files to a specific directory
+task copyResources(type: Copy) {
+    from rootDir
+    include '*.txt'
+    into 'build/libs'
 }

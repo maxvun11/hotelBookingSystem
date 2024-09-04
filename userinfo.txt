@@ -11,3 +11,4 @@ as,guest,0,false
 angus,guest,0,false
 f,guest,100,false
 g,guest,0,false
+Sam,guest,0,false
