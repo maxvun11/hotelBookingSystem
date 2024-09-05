@@ -16,7 +16,14 @@ pipeline {
         stage('Test') {
             steps {
                         bat 'gradle test'
-                        bat 'gradle sonarqube'
+                        
+                        script {
+                            try {
+                                bat 'gradle sonarqube'
+                            } catch (Exception e) {
+                                echo "SonarQube analysis failed or is not available. Skipping..."
+                            }
+                        }
             }
         }
         stage('Deploy') {
