@@ -73,10 +73,3 @@ task copyResources(type: Copy) {
     include '*.txt'
     into 'build/libs'
 }
-
-gradleEnterprise {
-    buildScan {
-        termsOfServiceUrl = "https://gradle.com/terms-of-service"
-        termsOfServiceAgree = "yes"
-    }
-}
