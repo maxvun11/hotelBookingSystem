@@ -1,5 +1,5 @@
 # 1. Choose a Base Image with JDK to compile and run Java
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-slim
 
 # 2. Set the Working Directory
 WORKDIR /app
