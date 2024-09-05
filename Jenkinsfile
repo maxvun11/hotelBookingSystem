@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                        bat 'gradle clean build --scan'
+                        bat 'gradle clean build'
                         bat 'gradle copyResources'
             }
         }
