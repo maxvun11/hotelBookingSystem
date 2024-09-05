@@ -7,8 +7,9 @@
  
 plugins {
   id "org.sonarqube" version "3.0"
+  id 'com.gradle.enterprise' version '3.7.1'
 }
-apply plugin: 'com.gradle.build-scan'
+
 apply plugin: 'java'
 apply plugin:'jacoco'
 jacoco {
@@ -74,7 +75,9 @@ task copyResources(type: Copy) {
     into 'build/libs'
 }
 
-buildScan {
-    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
-    termsOfServiceAgree = 'yes'
+gradleEnterprise {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
 }
