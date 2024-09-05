@@ -7,7 +7,6 @@
  
 plugins {
   id "org.sonarqube" version "3.0"
-  id "com.gradle.develocity" version "3.18"
 }
 
 apply plugin: 'java'
@@ -56,13 +55,6 @@ sourceSets {
         java {
             srcDir 'SoftwareTestingAssignment/src/test/java'
         }
-    }
-}
-
-develocity {
-    buildScan {
-        termsOfUseUrl = "https://gradle.com/help/legal-terms-of-use"
-        termsOfUseAgree = "yes"
     }
 }
 
