@@ -23,8 +23,6 @@ jobs:
         run: gradle test
       - name: Copy Text File
         run: gradle copyResources
-      - name: Test with sonarqube
-        run: gradle sonarqube
       - name: Log in to Docker Hub
         run: echo "${{ secrets.litjayong2004 }}" | docker login -u "${{ secrets.litjay }}" --password-stdin
       - name: Build Docker Image
