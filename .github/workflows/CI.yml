@@ -21,7 +21,7 @@ jobs:
           java-version: 8
           distribution: 'adopt'
 
-      # 4. Build the JAR file using Gradle
+      # 4. Build using Gradle
       - name: Build with Gradle
         run: ./gradlew clean build
 
@@ -62,12 +62,6 @@ jobs:
           name: code-coverage-report
           path: build/reports/jacoco/test/html/**
 
-      - name: Run SonarQube analysis
-        run: |
-          if ! ./gradlew sonarqube; then
-            echo "SonarQube analysis failed or is not available. Skipping..."
-          fi
-
       # 12. Log in to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -75,27 +69,27 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # # 13. Extract metadata (tags, labels) for Docker
-      # - name: Extract metadata (tags, labels) for Docker
-      #   id: meta
-      #   uses: docker/metadata-action@v4
-      #   with:
-      #     images: ${{ secrets.DOCKER_USERNAME }}/hotelbookingsystem
-
-      # 14. Build Docker image
+      # 13. Build and Push Docker image
       - name: Build Docker image
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
-          tags: hotel-booking-system
+          tags: ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
+      # 14. Run container
       - name: Run image with container
-        run: docker run -d --name hotel-booking-system-container hotel-booking-system
+        run: docker run -d --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
+      # 15. Wait for container to initialize
+      - name: Wait for container to initialize
+        run: sleep 5
+
+      # 16. Generate deployment log
       - name: Generate deployment log
         run: docker logs hotel-booking-system-container > deployment.log
 
+      # 17. Upload deployment log
       - name: Upload deployment log
         uses: actions/upload-artifact@v4
         with:
