@@ -61,22 +61,15 @@ jobs:
         with:
           name: code-coverage-report
           path: build/reports/jacoco/test/html/**
-          
-      # 12. Run SonarQube
-      - name: Run SonarQube analysis
-        run: |
-          if ! ./gradlew sonarqube; then
-            echo "SonarQube analysis failed or is not available. Skipping..."
-          fi
 
-      # 13. Log in to Docker Hub
+      # 12. Log in to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # 14. Build and Push Docker image
+      # 13. Build and Push Docker image
       - name: Build Docker image
         uses: docker/build-push-action@v4
         with:
@@ -84,19 +77,19 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
-      # 15. Run container
+      # 14. Run container
       - name: Run image with container
         run: docker run -d --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
-      # 16. Wait for container to initialize
+      # 15. Wait for container to initialize
       - name: Wait for container to initialize
         run: sleep 10
 
-      # 17. Generate deployment log
+      # 16. Generate deployment log
       - name: Generate deployment log
         run: docker logs hotel-booking-system-container > deployment.log
 
-      # 18. Upload deployment log
+      # 17. Upload deployment log
       - name: Upload deployment log
         uses: actions/upload-artifact@v4
         with:
