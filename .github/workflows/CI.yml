@@ -15,7 +15,7 @@ jobs:
         run: chmod +x ./gradlew
 
       # 3. Set up JDK 17 for the Gradle build
-      - name: Set up JDK 17
+      - name: Set up JDK 8
         uses: actions/setup-java@v3
         with:
           java-version: 8
@@ -64,7 +64,7 @@ jobs:
 
       - name: Run SonarQube analysis
         run: |
-          if ! gradle sonarqube; then
+          if ! ./gradlew sonarqube; then
             echo "SonarQube analysis failed or is not available. Skipping..."
           fi
 
@@ -87,7 +87,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          push: false
+          push: true
           tags: hotel-booking-system
 
       - name: Run image with container
