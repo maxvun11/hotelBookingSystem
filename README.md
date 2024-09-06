@@ -1,4 +1,4 @@
-# HotelBookingSystems
+# HotelBookingSystem
 
 # Installs
 
