@@ -83,7 +83,7 @@ jobs:
 
       # 15. Wait for container to initialize
       - name: Wait for container to initialize
-        run: sleep 10
+        run: sleep 5
 
       # 16. Generate deployment log
       - name: Generate deployment log
