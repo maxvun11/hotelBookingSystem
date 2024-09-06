@@ -75,13 +75,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # # 13. Extract metadata (tags, labels) for Docker
-      # - name: Extract metadata (tags, labels) for Docker
-      #   id: meta
-      #   uses: docker/metadata-action@v4
-      #   with:
-      #     images: ${{ secrets.DOCKER_USERNAME }}/hotelbookingsystem
-
       # 14. Build Docker image
       - name: Build Docker image
         uses: docker/build-push-action@v4
@@ -91,7 +84,7 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
       - name: Run image with container
-        run: docker run -d --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
+        run: docker run -it --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
       - name: Generate deployment log
         run: docker logs hotel-booking-system-container > deployment.log
