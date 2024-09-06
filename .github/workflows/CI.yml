@@ -88,10 +88,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: hotel-booking-system
+          tags: ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
       - name: Run image with container
-        run: docker run -d --name hotel-booking-system-container hotel-booking-system
+        run: docker run -d --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
       - name: Generate deployment log
         run: docker logs hotel-booking-system-container > deployment.log
