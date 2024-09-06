@@ -21,7 +21,7 @@ jobs:
           java-version: 8
           distribution: 'adopt'
 
-      # 4. Build the JAR file using Gradle
+      # 4. Build using Gradle
       - name: Build with Gradle
         run: ./gradlew clean build
 
@@ -86,7 +86,7 @@ jobs:
 
       # 15. Run container
       - name: Run image with container
-        run: docker run -it --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
+        run: docker run -d --name hotel-booking-system-container ${{ secrets.DOCKER_USERNAME }}/hotel-booking-system
 
       # 16. Wait for container to initialize
       - name: Wait for container to initialize
