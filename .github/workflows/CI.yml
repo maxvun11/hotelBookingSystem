@@ -63,7 +63,7 @@ jobs:
           path: build/reports/jacoco/test/html/**
 
       - name: Run SonarQube analysis
-         run: |
+        run: |
           if ! gradle sonarqube; then
             echo "SonarQube analysis failed or is not available. Skipping..."
           fi
