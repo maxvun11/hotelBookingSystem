@@ -87,6 +87,15 @@ jobs:
       - name: Run image with container
         run: docker run -d --name hotel-booking-system-container hotel-booking-system
 
+      - name: Generate deployment log
+        run: docker logs java-app-container > deployment.log
+
+      - name: Upload deployment log
+        uses: actions/upload-artifact@v3
+        with:
+          name: deployment-log
+          path: deployment.log
+
      
 
 
